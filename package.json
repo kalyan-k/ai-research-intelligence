@@ -1,0 +1,15 @@
+{
+    "name": "ai-research-intelligence",
+    "version": "1.0.0",
+    "scripts": {
+        "install-all": "npm install --prefix ai-research-intelligence-api && npm install --prefix ai-research-intelligence-ui",
+        "server": "npm start --prefix ai-research-intelligence-api",
+        "client": "npm run dev --prefix ai-research-intelligence-ui",
+        "start": "concurrently \"npm run server\" \"npm run client\"",
+        "lint": "npm run lint --prefix ai-research-intelligence-api && npm run lint --prefix ai-research-intelligence-ui",
+        "build": "npm run build --prefix ai-research-intelligence-api && npm run build --prefix ai-research-intelligence-ui"
+    },
+    "devDependencies": {
+        "concurrently": "^8.2.2"
+    }
+}
